@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -32,8 +31,8 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
-    QGraphicsView *graphicsView;
     QLabel *label;
+    QLabel *label_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -54,12 +53,13 @@ public:
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(450, 250, 161, 51));
-        graphicsView = new QGraphicsView(centralWidget);
-        graphicsView->setObjectName(QStringLiteral("graphicsView"));
-        graphicsView->setGeometry(QRect(80, 40, 251, 251));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(10, 360, 201, 21));
+        label_2 = new QLabel(centralWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(50, 20, 331, 321));
+        label_2->setPixmap(QPixmap(QString::fromUtf8("../../gelik_15/pic.jpg")));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -85,6 +85,7 @@ public:
         pushButton_2->setText(QApplication::translate("MainWindow", "Highscore", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("MainWindow", "Quit", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "all rights reserved (R) KanarOskin, 2017", Q_NULLPTR));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

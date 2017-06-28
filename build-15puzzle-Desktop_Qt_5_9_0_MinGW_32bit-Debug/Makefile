@@ -211,6 +211,7 @@ Makefile: ../15puzzle/15puzzle.pro ../../../Games/QT/5.9/mingw53_32/mkspecs/win3
 		../../../Games/QT/5.9/mingw53_32/mkspecs/features/qt_config.prf \
 		../../../Games/QT/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		../../../Games/QT/5.9/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Games/QT/5.9/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		../../../Games/QT/5.9/mingw53_32/mkspecs/features/toolchain.prf \
 		../../../Games/QT/5.9/mingw53_32/mkspecs/features/default_pre.prf \
@@ -388,6 +389,7 @@ Makefile: ../15puzzle/15puzzle.pro ../../../Games/QT/5.9/mingw53_32/mkspecs/win3
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/qt_config.prf:
 ../../../Games/QT/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf:
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/exclusive_builds.prf:
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/toolchain.prf:
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/default_pre.prf:
