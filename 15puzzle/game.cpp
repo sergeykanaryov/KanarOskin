@@ -12,6 +12,8 @@
 #include "QInputDialog"
 #include <QFile>
 #include <QTextStream>
+#include <QSound>
+
    QElapsedTimer t;
 Game::Game(QWidget*)
 {
@@ -83,6 +85,7 @@ void Game::move()
 {
     int x, y, rs, cs;
     QPushButton* clickedBtn = static_cast<QPushButton*>(sender());
+    QSound::play("://resources/click.wav");
     grid->getItemPosition(grid->indexOf(clickedBtn), &y, &x, &rs, &cs);
 
     if((path.x() == x && (path.y() == y+1 || path.y() == y-1))

@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include "QMessageBox"
 #include "form.h"
+#include <QFile>
+#include <QByteArray>
+#include <QString>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -30,3 +33,16 @@ void MainWindow::on_pushButton_4_clicked() // Помощь.
                                            "\nPress Enter to return to the menu...");
 }
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QFile file("file.txt");
+        QByteArray data;
+        if (!file.open(QIODevice::ReadOnly))
+        {
+            QMessageBox::information(this, "Help", "Cant open the file");
+            return;
+        }
+        data = file.readAll();
+        QMessageBox::information(this, "Results", data);
+}

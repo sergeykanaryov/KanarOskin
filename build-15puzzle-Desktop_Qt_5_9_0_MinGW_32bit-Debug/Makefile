@@ -237,7 +237,9 @@ Makefile: ../15puzzle/15puzzle.pro ../../../Games/QT/5.9/mingw53_32/mkspecs/win3
 		../15puzzle/15puzzle.pro \
 		../../../Games/QT/5.9/mingw53_32/lib/qtmaind.prl \
 		../../../Games/QT/5.9/mingw53_32/lib/Qt5Widgets.prl \
+		../../../Games/QT/5.9/mingw53_32/lib/Qt5Multimedia.prl \
 		../../../Games/QT/5.9/mingw53_32/lib/Qt5Gui.prl \
+		../../../Games/QT/5.9/mingw53_32/lib/Qt5Network.prl \
 		../../../Games/QT/5.9/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile ..\15puzzle\15puzzle.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../Games/QT/5.9/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -415,7 +417,9 @@ Makefile: ../15puzzle/15puzzle.pro ../../../Games/QT/5.9/mingw53_32/mkspecs/win3
 ../15puzzle/15puzzle.pro:
 ../../../Games/QT/5.9/mingw53_32/lib/qtmaind.prl:
 ../../../Games/QT/5.9/mingw53_32/lib/Qt5Widgets.prl:
+../../../Games/QT/5.9/mingw53_32/lib/Qt5Multimedia.prl:
 ../../../Games/QT/5.9/mingw53_32/lib/Qt5Gui.prl:
+../../../Games/QT/5.9/mingw53_32/lib/Qt5Network.prl:
 ../../../Games/QT/5.9/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\15puzzle\15puzzle.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

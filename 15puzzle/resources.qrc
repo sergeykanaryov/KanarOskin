@@ -20,5 +20,7 @@
         <file>resources/new.png</file>
         <file>resources/pic.jpg</file>
         <file>resources/move.wav</file>
+        <file>resources/bzzz.wav</file>
+        <file>resources/click.wav</file>
     </qresource>
 </RCC>

@@ -1,1 +1,4 @@
-Nickname	            Result (sec)
+Nickname		Result (sec)
+yoba			228
+kek			1337
+mda			1488
